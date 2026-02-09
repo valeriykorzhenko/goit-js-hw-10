@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Page 3</title>
+    <link rel="stylesheet" href="./css/styles.css" />
+  </head>
+  <body>
+    <load
+      src="./partials/header.html"
+      icon-path="./img/sprite.svg#logo"
+      highlight-curr="active"
+    />
+
+    <main>
+      <div class="container">
+        <h1 class="main-title">Snackbar</h1>
+        <a class="back-link" href="./index.html">Go back</a>
+      </div>
+      <div class="snackbar-page">
+        <form class="form">
+          <label class="form-label">
+            Delay (ms)
+            <input type="number" name="delay" required />
+          </label>
+
+          <fieldset class="fieldset">
+            <legend>State</legend>
+            <label class="radio">
+              <input type="radio" name="state" value="fulfilled" required />
+              Fulfilled
+            </label>
+            <label class="radio">
+              <input type="radio" name="state" value="rejected" required />
+              Rejected
+            </label>
+          </fieldset>
+
+          <button type="submit">Create notification</button>
+        </form>
+      </div>
+
+      <script type="module" src="./js/2-snackbar.js"></script>
+    </main>
+  </body>
+</html>
